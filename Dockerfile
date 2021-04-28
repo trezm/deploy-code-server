@@ -28,6 +28,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+RUN nvm install node
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
